@@ -1,0 +1,73 @@
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    justify-content: center;
+}
+
+.body {
+    font-family: Roboto, sans-serif;
+    color: $primary-text-color;
+    letter-spacing: 0.03em;
+    background-color: $primary-white-color;
+}
+
+/* убираем точки списков */
+.list {
+    list-style: none;
+    padding: 0;
+}
+
+/* убираем подчеркивание ссылок */
+.link {
+    text-decoration: none;
+}
+
+.icon__linc {
+    border-radius: 50%;
+    display: flex;
+    fill: $icon-color;
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 44px;
+    height: 44px;
+    padding: 12px;
+    align-items: center;
+    transition-property: fill, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        fill: $primary-white-color;
+        cursor: pointer;
+    }
+}
+
+.flex {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.topic {
+    color: $head-text-color;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-align: center;
+}

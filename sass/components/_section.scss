@@ -1,0 +1,17 @@
+/* Раскраска секций (первая секция или единственная на листе - то белая) */
+.section__first {
+    padding-top: 94px;
+    background-color: $primary-white-color;
+}
+
+.section {
+    &:nth-child(2n + 1) {
+        background-color: $primary-white-color;
+    }
+    &:nth-child(2n) {
+        background-color: $primary-background-color;
+    }
+    &:only-child {
+        background-color: $primary-white-color;
+    }
+}
