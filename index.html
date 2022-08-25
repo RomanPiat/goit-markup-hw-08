@@ -16,7 +16,44 @@
 
     <!-- Header -->
 
-    <header class="header">
+    <header class="page-header">
+      <div class="container">
+                  <a href="./index.html" class="logo link">Web<span class="logo-black">Studio</span>
+                  </a>
+        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+
+<svg width="40" height="40" aria-label="переключатель мобильного меню">
+  <use class="icon-menu" href="./images/icons.svg#icon-menu"></use>
+
+          </svg>
+        </button>
+    
+        <ul class="menu">
+
+
+            <li class="header__item">
+              <a class="header__link header__current link" href="./index.html">Студия</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link link" href="">Контакты</a>
+            </li>
+
+
+        </ul>
+
+      </div>
+    </header>
+
+
+
+    <header class="header list">
+
+    
+<!-- 
+
       <div class="container header__flex">
         <nav class="header__nav">
           <a href="./index.html" class="logo link">Web<span class="logo-black">Studio</span>
@@ -51,14 +88,66 @@
             </a>
           </li>
         </ul>
-      </div>
+
+
+
+      </div>-->
     </header>
-    
+  
+
+  <div class="menu-container js-menu-container" id="mobile-menu">
+    <button class="menu-toggle js-close-menu">
+
+<svg width="40" height="40" aria-label="закрити мобільне меню">
+  <use class="icon-menu" href="./images/icons.svg#icon-closemenu"></use>
+</svg>
+    </button>
+
+
+
+    <ul class="mobile-menu">
+
+                  <li class="header__item">
+                    <a class="header__link header__current link" href="./index.html">Студія</a>
+                  </li>
+                  <li class="header__item">
+                    <a class="header__link link" href="./portfolio.html">Портфоліо</a>
+                  </li>
+                  <li class="header__item">
+                    <a class="header__link link" href="">Контакти</a>
+                  </li>
+
+    </ul>
+
+          <ul class="mobile-menu__contact list">
+            <li class="">
+              <a class="mobile-menu__tel" href="tel:0991111111"> 099 111 11 11</a>
+            </li>
+            <li class="">
+              <a class="mobile-menu__mail" href="mailto:info&#64;devstudio.com">
+                info&#64;devstudio.com</a>
+            </li>
+          </ul>
+
+              <ul class="mobile-social">
+                <li><a class="mobile-social__item" href="">Instagram</a></li>
+                <li><a class="mobile-social__item" href="">Twitter</a></li>
+                <li><a class="mobile-social__item" href="">Facebook</a></li>
+                <li><a class="mobile-social__item" href="">LinkedIn</a></li>
+              </ul>
+  </div>
+
+
+
+
+
+
+
     <main class="main">
 
       <!-- Герой -->
       <div class="hero">
-        <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
+        <h1 class="hero__title">Ефективні рішення<br>для вашого бізнесу</h1>
         <button class="hero__button" type="button" data-modal-open>Замовити послугу</button>
       </div>
 
@@ -124,7 +213,7 @@
       </section>
 
       <!-- Деятельность -->
-      <section class="section">
+      <section class="section mobile-hide">
         <div class="container">
           <h2 class="activity__header topic">Чим ми займаємось</h2>
           <ul class="activity__list list">
@@ -347,10 +436,21 @@
       </section>
     </main>
 
+
+
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"></script>
+    <script defer src="js/mobile-menu.js"></script>
+
+
+
+
     <!-- Футер -->
     <footer class="footer">
-      <div class="container flex">
-        <div>
+      <div class="container">
+ <div class="footer_infoblock">
+        <div class="section">
                   <a href="./index.html" class="logo link">Web<span class="logo-white">Studio</span></a>
                   <address>
                     <ul class="list">
@@ -393,8 +493,9 @@
                       </li>
                     </ul>
         </div>
+</div>
         <form class="form">
-         <div class="footer__field">
+         <div class="footer__field section">
             <p class="footer__sub">Підпишіться на розсилку</p>
              <label class="footer__fieldhead" for="email">
                <input type="email" name="email" id="email" placeholder="E-mail" />

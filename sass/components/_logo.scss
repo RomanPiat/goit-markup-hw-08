@@ -5,7 +5,13 @@
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-    margin-right: 93px;
+    position: absolute;
+    left: 15px;
+/*     margin-right: 93px; */
+}
+
+.footer .logo {
+    position: inherit;
 }
 
 .logo-black {
