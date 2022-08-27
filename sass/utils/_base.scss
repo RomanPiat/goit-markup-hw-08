@@ -9,12 +9,17 @@ li {
 }
 
 .section {
+        outline: 1px solid blue;
     padding-top: 60px;
     padding-bottom: 60px;
     @media screen and (min-width: 1200px) {
         padding-top: 94px;
         padding-bottom: 94px;
     }
+}
+
+.section__first {
+    padding-top: 60px;
 }
 
 .container {
@@ -92,4 +97,11 @@ li {
     @media screen and (max-width: 768px) {
         display: none;
     }
+}
+
+.mobile-hide {
+                @media screen and (max-width: 1199px) {
+                        display: none;;
+                
+                    }
 }

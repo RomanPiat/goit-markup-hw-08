@@ -8,24 +8,16 @@
     text-transform: uppercase;
     margin-bottom: 10px;
     width: 100%;
-                @media screen and (max-width: 767px) {
-                        text-align: center;
-                
-                    }
-}
-
-.peculiarity .peculiarity__head {
-    width: 270px;
-        @media screen and (max-width: 767px) {
-            min-width: 450px;
-        
-            }
+        @media screen and (max-width: 768px) {
+            text-align: center;
+        }
 }
 
 .peculiarity {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+    justify-content: center;
 }
 
 
@@ -39,6 +31,9 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
+    &svg {
+        justify-content: center;
+    }
 
 }
 
@@ -49,10 +44,6 @@
     text-align: left;
     letter-spacing: 0.03em;
     width: 100%;
-            @media screen and (max-width: 767px) {
-          text-align: center;
-            
-                }
 }
 
 .peculiarity__head {
