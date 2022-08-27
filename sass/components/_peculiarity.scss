@@ -22,17 +22,26 @@
             }
 }
 
+.peculiarity {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+
+
 .peculiarity__icon {
     display: flex;
     height: 120px;
-    width: 100%;
     background-color: $button-background-color;
     border-radius: 4px;
-     align-items: center;
-margin-left: auto;
-margin-right: auto;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 30px;
+
 }
+
 /* Подписи под заголовками */
 .peculiarity__text {
     font-size: 14px;
@@ -44,4 +53,17 @@ margin-right: auto;
           text-align: center;
             
                 }
+}
+
+.peculiarity__head {
+
+    @media screen and (min-width: 768px) {
+
+            width: calc((100% - 4*15px)/2);
+        }
+    
+        @media screen and (min-width: 1200px) {
+
+            width: calc((100% - 8*15px)/4);
+        }
 }

@@ -10,6 +10,9 @@
     padding-bottom: 60px; */
     text-align: center;
 /*     display: flex; */
+    @media screen and (min-width: 1200px) {
+            text-align: left;
+        }
 }
 
 .footer__header {
@@ -143,7 +146,7 @@ input#email {
 
 /* Кнопки на карточках Наша Команда */
 .footer__social {
-    width: 100%;
+/*     width: 100%; */
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
@@ -154,3 +157,17 @@ input#email {
         background-color: $accent-color;
     }
 }
+
+/* .footer__infoblock {
+     @media screen and (max-width: 479px) {
+        display: inline-flex;
+     }
+} */
+
+/* .footer .container {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+} */
