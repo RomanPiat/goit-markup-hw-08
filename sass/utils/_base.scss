@@ -9,9 +9,9 @@ li {
 }
 
 .section {
-  outline: 1px solid blue;
   padding-top: 60px;
   padding-bottom: 60px;
+
   @media screen and (min-width: 1200px) {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -23,12 +23,10 @@ li {
 }
 
 .container {
-  outline: 1px solid tomato;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  /*     justify-content: center; */
 
   @media screen and (min-width: 480px) {
     width: 480px;
@@ -93,7 +91,6 @@ li {
 }
 
 .mobile-hide {
-  color: grey;
   @media screen and (max-width: 768px) {
     display: none;
   }

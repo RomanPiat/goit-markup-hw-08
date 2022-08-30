@@ -3,24 +3,20 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-
   background-color: $hero-background-color;
   margin-left: auto;
   margin-right: auto;
-
   padding: 60px 15px 0 15px;
-
   text-align: center;
-  /*     display: flex; */
   @media screen and (min-width: 1200px) {
     text-align: left;
   }
 }
+
 .footer__section {
   flex-shrink: 0;
   width: 303px;
   padding-bottom: 60px;
-  border: 1px solid greenyellow;
 }
 
 .footer__header {
@@ -49,6 +45,7 @@
     color: $accent-color;
   }
 }
+
 .footer__telmail {
   color: rgba(255, 255, 255, 0.6);
   font-weight: 400;
@@ -72,9 +69,6 @@
   display: block;
   flex-shrink: 0;
 
-  /*     margin-left: 70px;
-    margin-top: 12px; */
-
   & > .icon__linc {
     fill: $primary-white-color;
     background-color: rgba(255, 255, 255, 0.1);
@@ -92,8 +86,6 @@
   color: $primary-white-color;
   text-transform: uppercase;
   padding-bottom: 60px;
-  /*     margin-left: 53px; */
-  /*     margin-top: 12px; */
 }
 
 .footer__fieldhead {
@@ -127,7 +119,6 @@
   align-items: center;
   text-align: center;
   fill: $primary-white-color;
-
   cursor: pointer;
 
   svg {
@@ -154,7 +145,6 @@ input#email {
 
 /* Кнопки на карточках Наша Команда */
 .footer__social {
-  /*     width: 100%; */
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
@@ -165,17 +155,3 @@ input#email {
     background-color: $accent-color;
   }
 }
-
-/* .footer__infoblock {
-     @media screen and (max-width: 479px) {
-        display: inline-flex;
-     }
-} */
-
-/* .footer .container {
-    @media screen and (min-width: 768px) {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-} */

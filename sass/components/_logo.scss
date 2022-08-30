@@ -1,23 +1,22 @@
 /* Логотип верхний */
 .logo {
-    color: $accent-color;
-    font-family: $secondaryFont, sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    left: 15px;
-    margin-right: auto;
-/*     margin-right: 93px; */
+  color: $accent-color;
+  font-family: $secondaryFont, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  left: 15px;
+  margin-right: auto;
 }
 
 .footer .logo {
-    position: inherit;
+  position: inherit;
 }
 
 .logo-black {
-    color: $logo-black-color;
+  color: $logo-black-color;
 }
 
 .logo-white {
-    color: $primary-white-color;
+  color: $primary-white-color;
 }

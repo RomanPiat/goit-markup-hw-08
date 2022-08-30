@@ -1,48 +1,48 @@
 /* Герой */
 .hero {
-    background-color: $hero-background-color;
-    background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
-    color: $primary-white-color;
-    background-size: cover;
-    background-position: center;
-    padding-top: 200px;
-    padding-bottom: 30px;
-    text-align: center;
-    max-width: 1600px;
-    margin-left: auto;
-    margin-right: auto;
+  background-color: $hero-background-color;
+  background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero.jpg);
+  color: $primary-white-color;
+  background-size: cover;
+  background-position: center;
+  padding-top: 200px;
+  padding-bottom: 30px;
+  text-align: center;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero__title {
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    text-align: center;
-    box-sizing: border-box;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-        @media screen and (max-width: 767px) {
-                font-size: 26px;
-        
-            }
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-align: center;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+
+  @media screen and (max-width: 767px) {
+    font-size: 26px;
+  }
 }
 
 .hero__button {
-    background-color: $accent-color;
-    color: $primary-white-color;
-    border: none;
-    font-weight: 700;
-    line-height: 1.87;
-    letter-spacing: 0.06em;
-    padding: 10px 32px;
-    display: block;
-    font-size: 16px;
-    cursor: pointer;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    margin: 30px auto 200px;
-
+  background-color: $accent-color;
+  color: $primary-white-color;
+  border: none;
+  font-weight: 700;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  padding: 10px 32px;
+  display: block;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  margin: 30px auto 200px;
 }
