@@ -139,11 +139,7 @@ li {
       -ms-flex-align: center;
           align-items: center;
   border-bottom: 1px solid #ececec;
-}
-@media screen and (max-width: 767px) {
-  .header .container {
-    height: 60px;
-  }
+  height: 60px;
 }
 @media screen and (min-width: 768px) {
   .header .container {
@@ -166,49 +162,31 @@ li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  display: none;
 }
 @media screen and (min-width: 768px) {
   .header__contact {
     display: block;
   }
 }
-@media screen and (max-width: 767px) {
-  .header__contact {
-    display: none;
-  }
-}
 
 .header__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  display: none;
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 768px) {
   .header__list {
-    display: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
 .header__icon {
   margin-right: 9px;
   vertical-align: middle;
-}
-
-.mobile-button {
-  position: absolute;
-  right: 0;
-  display: none;
-  border: none;
-  fill: var(#212121);
-  color: var(#ffffff);
-}
-@media screen and (max-width: 767px) {
-  .mobile-button {
-    display: block;
-  }
 }
 
 .header__telmail {
@@ -916,7 +894,7 @@ li {
 .footer__section {
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  width: 303px;
+  width: 302px;
   padding-bottom: 60px;
 }
 
@@ -963,16 +941,6 @@ li {
 }
 .footer__telmail:hover, .footer__telmail:focus {
   color: #2196f3;
-}
-
-.footer__social {
-  display: block;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-}
-.footer__social > .icon__linc {
-  fill: #ffffff;
-  background-color: rgba(255, 255, 255, 0.1);
 }
 
 /* Форма запроса футера */
@@ -1207,6 +1175,8 @@ input#email {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;

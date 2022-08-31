@@ -15,7 +15,7 @@
 
 .footer__section {
   flex-shrink: 0;
-  width: 303px;
+  width: 302px;
   padding-bottom: 60px;
 }
 
@@ -62,16 +62,6 @@
   &:hover,
   &:focus {
     color: $accent-color;
-  }
-}
-
-.footer__social {
-  display: block;
-  flex-shrink: 0;
-
-  & > .icon__linc {
-    fill: $primary-white-color;
-    background-color: rgba(255, 255, 255, 0.1);
   }
 }
 
